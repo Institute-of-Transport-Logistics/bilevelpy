@@ -49,7 +49,7 @@ class BaseModel:
         self.data: MultiEntityDataset = data
         self.vars: dict[type[Variable], Any] = {}
         self.added_vars: list[type[Variable]] = []
-        self.added_constraints: list[Constraint] = []
+        self.added_constraints: list[type[Constraint]] = []
 
     def add_constr(self, *args, **kwargs) -> Constr:
         """Shortcut for ``self.model.addConstr``.

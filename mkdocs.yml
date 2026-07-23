@@ -1,0 +1,92 @@
+site_name: BilevelPy
+site_description: A framework for bilevel optimization models built on Gurobi
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Quickstart: tutorial.md
+  - How-To Guides:
+      - Build Datasets: guides/datasets.md
+      - Build Models: guides/models.md
+      - Solve Models: guides/solving.md
+      - Full Pipeline Example: guides/full_pipeline.md
+  - Explanations:
+      - Conventions: conventions.md
+  - API Reference: reference/
+
+theme:
+  name: material
+  logo: resources/icon_white.png
+  favicon: resources/icon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: green
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: docs
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - attr_list
+  - pymdownx.mark
+
+plugins:
+  - search
+  - gen-files:
+        scripts:
+          - generate_api_docs.py
+  - literate-nav
+  - section-index
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_section_style: table
+            show_root_heading: false
+            show_source: true
+            show_category_heading: false
+            merge_init_into_class: true
+            signature_crossrefs: true
+            filters: ["!^_"]
+
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+watch:
+  - src/bilevelpy
