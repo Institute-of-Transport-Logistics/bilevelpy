@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use BilevelPy, please cite this software."
+title: "BilevelPy"
+type: software
+version: "0.1.0"
+
+authors:
+  - given-names: "Amine"
+    family-names: "Bahij"
+    affiliation: "TU Dortmund University"
+
+license: "Apache-2.0"
+repository-code: "https://github.com/Institute-of-Transport-Logistics/bilevelpy"
+url: "https://institute-of-transport-logistics.github.io/bilevelpy/"
