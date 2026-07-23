@@ -1,5 +1,11 @@
 site_name: BilevelPy
-site_description: A framework for bilevel optimization models built on Gurobi
+site_description: An extensible framework for Gurobi-based optimization models, with built-in support for hub-location problems
+site_url: https://institute-of-transport-logistics.github.io/bilevelpy/
+
+repo_url: https://github.com/Institute-of-Transport-Logistics/bilevelpy
+repo_name: Institute-of-Transport-Logistics/bilevelpy
+edit_uri: edit/main/docs/
+
 
 nav:
   - Home: index.md
@@ -22,13 +28,17 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
-    - content.code.annotation
+    - content.code.annotate
     - content.code.copy
     - content.action.edit
+    - content.action.view
   palette:
     - scheme: default
       toggle:
@@ -63,6 +73,8 @@ markdown_extensions:
   - footnotes
   - attr_list
   - pymdownx.mark
+  - toc:
+        permalink: true
 
 plugins:
   - search
@@ -86,6 +98,7 @@ plugins:
 
 
 extra_javascript:
+  - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 watch:

@@ -1,7 +1,8 @@
 # <img src="resources/bilevelpy_logo_text_no_background.png" alt="BilevelPy" height="32">
 
-A framework for building, solving, and benchmarking **hub location optimization models** built on [Gurobi](https://www.gurobi.com/).
 
+
+An extensible Python framework for building, solving, and evaluating **[Gurobi](https://www.gurobi.com/)-based optimization models**, with built-in support for hub-location problems.
 ## What BilevelPy Provides
 
 | Component | Description |
