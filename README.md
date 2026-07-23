@@ -44,10 +44,15 @@ additional operations-research models in future releases.
 
 ## Installation
 
-Install the current development version directly from GitHub:
+## pip 
 
 ```bash
-poetry add git+https://github.com/Institute-of-Transport-Logistics/bilevelpy.git
+pip install bilevelpy
+```
+
+## poetry 
+```bash
+poetry add bilevelpy
 ```
 
 **Requirements**
@@ -58,6 +63,8 @@ poetry add git+https://github.com/Institute-of-Transport-Logistics/bilevelpy.git
 
 BilevelPy is licensed separately from Gurobi. Installing BilevelPy does not
 provide a licence for Gurobi Optimizer.
+
+For development installations and further details, see the [installation guide](https://institute-of-transport-logistics.github.io/bilevelpy/installation/).
 
 ## Quick start: single-allocation hub location
 
