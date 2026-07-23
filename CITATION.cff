@@ -3,6 +3,7 @@ message: "If you use BilevelPy, please cite this software."
 title: "BilevelPy"
 type: software
 version: "0.1.0"
+date-released: "2026-07-23"
 
 authors:
   - given-names: "Amine"
