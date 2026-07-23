@@ -1,12 +1,22 @@
-[tool.poetry]
+[project]
 name = "bilevelpy"
 version = "0.1.0"
-description = "An extensible Python framework for building, solving, and evaluating Gurobi-based optimization models."
-authors = ["Amine Bahij <contact@amine-bahij.dev>"]
-license = "Apache-2.0"
+description = "An extensible framework for building, solving, and evaluating Gurobi-based optimization models, with built-in support for hub-location problems."
 readme = "README.md"
-packages = [{include = "bilevelpy", from = "src"}]
-keywords = ["optimization", "hub-location", "operations-research"]
+requires-python = ">=3.11,<3.15"
+license = "Apache-2.0"
+
+authors = [
+    { name = "Amine Bahij", email = "contact@amine-bahij.dev" },
+]
+
+keywords = [
+    "optimization",
+    "hub-location",
+    "operations-research",
+    "gurobi",
+]
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -22,11 +32,30 @@ classifiers = [
     "Typing :: Typed",
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.15"
-gurobipy = ">=11.0"
-pandas = "*"
-numpy = "*"
+dependencies = [
+    "gurobipy>=11.0",
+    "numpy",
+    "pandas",
+]
+
+[project.urls]
+Repository = "https://github.com/Institute-of-Transport-Logistics/bilevelpy"
+Documentation = "https://institute-of-transport-logistics.github.io/bilevelpy/"
+Issues = "https://github.com/Institute-of-Transport-Logistics/bilevelpy/issues"
+
+
+[tool.poetry]
+packages = [
+    { include = "bilevelpy", from = "src" },
+]
+
+
+[tool.poetry.group.viz]
+optional = true
+
+[tool.poetry.group.viz.dependencies]
+matplotlib = "*"
+seaborn = "*"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -34,8 +63,25 @@ pytest = "*"
 pytest-cov = "*"
 poethepoet = "*"
 
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+pymdown-extensions = "*"
+mkdocstrings = { extras = ["python"], version = "*" }
+mkdocs-gen-files = "*"
+mkdocs-literate-nav = "*"
+mkdocs-section-index = "*"
+
+
 [tool.coverage.run]
-omit = ["src/bilevelpy/benchmarks/*"]
+omit = [
+    "src/bilevelpy/benchmarks/*",
+]
+
 
 [tool.poe.tasks]
 test = "pytest"
@@ -43,17 +89,9 @@ test-cov = "pytest --cov=bilevelpy"
 docs = "mkdocs serve"
 docs-build = "mkdocs build"
 
-[tool.poetry.group.docs]
-optional = true
-[tool.poetry.group.docs.dependencies]
-mkdocs = "*"
-mkdocs-material = "*"
-pymdown-extensions = "*"
-mkdocstrings = {extras = ["python"], version = "*"}
-mkdocs-gen-files = "*"
-mkdocs-literate-nav = "*"
-mkdocs-section-index = "*"
 
 [build-system]
-requires = ["poetry-core>=2.0.0"]
+requires = [
+    "poetry-core>=2.4.0,<3.0.0",
+]
 build-backend = "poetry.core.masonry.api"

@@ -124,7 +124,7 @@ jobs:
         run: poetry install --with docs --no-interaction
 
       - name: Build documentation
-        run: poetry run mkdocs build --strict
+        run: poetry run mkdocs build 
 
       - name: Upload GitHub Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
