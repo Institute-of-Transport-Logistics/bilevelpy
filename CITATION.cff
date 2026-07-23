@@ -14,3 +14,7 @@ authors:
 license: "Apache-2.0"
 repository-code: "https://github.com/Institute-of-Transport-Logistics/bilevelpy"
 url: "https://institute-of-transport-logistics.github.io/bilevelpy/"
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21515530"

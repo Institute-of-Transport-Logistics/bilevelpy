@@ -4,6 +4,7 @@
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-brightgreen)](https://institute-of-transport-logistics.github.io/bilevelpy/)
 [![Python](https://img.shields.io/badge/python-3.11--3.14-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21515530.svg)](https://doi.org/10.5281/zenodo.21515530)
 
 <p align="center">
   <img
