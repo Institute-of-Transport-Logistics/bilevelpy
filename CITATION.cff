@@ -9,6 +9,7 @@ authors:
   - given-names: "Amine"
     family-names: "Bahij"
     affiliation: "TU Dortmund University"
+    orcid: "https://orcid.org/0009-0005-9860-9635"
 
 license: "Apache-2.0"
 repository-code: "https://github.com/Institute-of-Transport-Logistics/bilevelpy"
