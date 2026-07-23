@@ -6,7 +6,7 @@
 
 <p align="center">
   <img
-    src="docs/resources/bilevelpy_logo_text_background.png"
+    src="https://raw.githubusercontent.com/Institute-of-Transport-Logistics/bilevelpy/main/docs/resources/bilevelpy_logo_text_background.png"
     alt="BilevelPy"
     height="180"
   >
