@@ -221,17 +221,17 @@ Custom processors can subclass `EntityProcessor` and implement
 
 A complete research implementation built with BilevelPy is available here:
 
-[An Oracle-based Approach for Price-setting Problems in Logistics — paper code implementation](https://github.com/Institute-of-Transport-Logistics/oracle-price-settings-logistics)
+[An Oracle-based Approach for Price-setting Problems in Logistics — paper code implementation](https://institute-of-transport-logistics.github.io/oracle-price-settings-logistics)
 
 ## Documentation
 
 | Guide | Contents |
 |---|---|
-| [Tutorial](docs/tutorial.md) | Step-by-step introduction |
-| [Full pipeline](docs/guides/full_pipeline.md) | Custom variables, constraints, and model construction |
-| [Datasets](docs/guides/datasets.md) | `EntityStore`, `MultiEntityDataset`, and `DatasetBuilder` |
-| [Models](docs/guides/models.md) | Variables, constraints, and the model build lifecycle |
-| [Solving](docs/guides/solving.md) | Solver configuration and structured solution extraction |
+| [Tutorial](https://institute-of-transport-logistics.github.io/bilevelpy/tutorial/) | Step-by-step introduction |
+| [Full pipeline](https://institute-of-transport-logistics.github.io/bilevelpy/guides/full_pipeline/) | Custom variables, constraints, and model construction |
+| [Datasets](https://institute-of-transport-logistics.github.io/bilevelpy/guides/datasets/) | `EntityStore`, `MultiEntityDataset`, and `DatasetBuilder` |
+| [Models](https://institute-of-transport-logistics.github.io/bilevelpy/guides/models/) | Variables, constraints, and the model build lifecycle |
+| [Solving](https://institute-of-transport-logistics.github.io/bilevelpy/guides/solving/) | Solver configuration and structured solution extraction |
 
 <!--
 Full documentation:
